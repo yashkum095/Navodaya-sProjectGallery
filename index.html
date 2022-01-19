@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <!-- THIS IS OUR HOME PAGE -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-</head>
-<body>
-    some lines added by a user
-Does that works?
-<marquee>Hello Is this working???????</marquee>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navodayan's Project Gallery - HomePage</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <!-- navbar css  -->
+    <link rel="stylesheet" href="css/nav.css" />
+  </head>
+  <body>
+    <marquee>Hello Is this working???????</marquee>
+    <!-- navbar  -->
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#" id="navbutton">About</a>
+        <a href="#" id="navbutton">Services</a>
+        <a href="#" id="navbutton">Clients</a>
+        <a href="#" id="navbutton">Contact</a>
+      </div>
+    </div>
+
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span onclick="openNav()">open</span>
+  </body>
+  <script src="js/nav.js"></script>
 </html>
